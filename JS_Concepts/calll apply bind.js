@@ -13,3 +13,6 @@ printName.apply(name1, ["HM", "call"])
 const test = printName.bind(name1,"MH", "call");
 test();
 
+// bind will create a new function then dev can call as an when required
+// call withh take second arguments as many as you can
+// apply wiill take second argument as array of arguments

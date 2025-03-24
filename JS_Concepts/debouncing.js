@@ -1,18 +1,16 @@
+/**
+ * Create a debounce funtion explain while doing it
+ * It will eccute the function after the wait time lapsed
+ */
 
-let conunter=0;
-const getData=()=>{
-    console.log("fetch data..", conunter++);
+function debounce(func, wait = 0) {
+  let timer = null;
+  return function (...args) {
+    let context = this;
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      timer = null;
+      func.apply(context, args);
+    }, wait);
+  };
 }
-
-const debounce=(fn, delay)=>{
-    let timer;
-    return function(){
-        let context = this, args= arguments;
-        clearTimeout(timer);
-        timer = setTimeout(()=>{
-            fn.apply(context, arguments)
-        },delay);
-    }
-}
-
-const debounceWrapper = debounce(getData, 300)
