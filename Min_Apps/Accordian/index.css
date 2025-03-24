@@ -1,0 +1,19 @@
+.accordion-item {
+    border: 1px solid gray;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background: red;
+}
+
+.accordion-content {
+    max-height: 0;
+    padding: 0 10px;
+    transition: max-height 0.3s;
+    overflow: hidden;
+}
