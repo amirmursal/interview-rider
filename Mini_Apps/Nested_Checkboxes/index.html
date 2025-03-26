@@ -1,0 +1,26 @@
+<!--
+✅ Checking a parent checkbox selects/deselects all child checkboxes.
+✅ Checking/unchecking child checkboxes updates the parent checkbox state.
+✅ If all children are checked, the parent gets checked.
+✅ If some children are checked, the parent gets an indeterminate state.
+✅ If no children are checked, the parent gets unchecked.
+-->
+<html>
+  <head>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Parent checkbox</label>
+      <input type="checkbox" class="parent-checkbox" />
+      <div class="nested-checkboxes">
+        <label>Option1</label>
+        <input type="checkbox" class="child-checkbox" />
+        <label>Option2</label>
+        <input type="checkbox" class="child-checkbox" />
+        <label>Option3</label>
+        <input type="checkbox" class="child-checkbox" />
+      </div>
+    </div>
+  </body>
+</html>
