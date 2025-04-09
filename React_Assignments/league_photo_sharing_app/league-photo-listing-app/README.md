@@ -1,25 +1,26 @@
-# Getting Started with Create React App
+# What is this app all about
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple photo listing app built using React. It allows users to view a list of photos, user can filter photos by author name
 
-## Available Scripts
+# API used for this app
 
-In the project directory, you can run:
+The app uses the [picsum](https://picsum.photos/v2/list/) API to fetch a list of photos. The API provides a simple way to get a list of photos
 
-### `npm start`
+# How to run this app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. `npm install` from the root directory of the project
+2. `npm start` to run the app
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# How to run the tests
 
-### `npm test`
+# `npm test` from the root directory of the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will also see any test results in the console.
 
-### `npm run build`
+# Available Scripts
+
+# `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -27,20 +28,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Available Scripts
 
-### `npm run eject`
+# `npm run build`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!

@@ -105,6 +105,16 @@ const PhotoSearch = () => {
                 <div className="card" key={id}>
                   <img src={download_url} alt={author} className="img" />
                   <h3>{highlightText(author, searchTerm)}</h3>
+                  <p className="card-link">
+                    View{" "}
+                    <a
+                      href={download_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      here
+                    </a>
+                  </p>
                 </div>
               ))}
             </div>
