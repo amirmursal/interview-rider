@@ -8,13 +8,30 @@
  */
 
 function findMissingNumberInSequence(numbers) {
-  const test = numbers.sort((a, b) => a - b);
-  for (let num = 0; num < test.length; num++) {
-    if (!test.includes(test[num] + 1)) {
-      test[num] = test[num] + 1;
-    }
-  }
-  console.log(test);
+  const n = numbers.length;
+  const expectedSum = (n * (n + 1)) / 2;
+  const actualSum = numbers.reduce((acc, num) => acc + num, 0);
+  return expectedSum - actualSum;
 }
 
-findMissingNumberInSequence([1, 3, 0]);
+console.log(findMissingNumberInSequence([1, 3, 0]));
+
+/**
+ * Let's implement a function to identify the missing elements in the array.
+ */
+
+function findAllMissingNumbersInSequence(numbers) {
+  const sorted = numbers.sort((a, b) => a - b);
+  const missing = [];
+  const min = sorted[0];
+  const max = sorted[sorted.length - 1];
+
+  for (let i = min; i <= max; i++) {
+    if (!numbers.includes(i)) {
+      missing.push(i);
+    }
+  }
+  return missing;
+}
+
+//console.log(findAllMissingNumbersInSequence([1, 3, 0, 6, 44]));
