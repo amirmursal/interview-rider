@@ -13,7 +13,7 @@ function curry(func) {
       return func(...args);
     } else {
       // If not sufficient, return a function that collects more arguments
-      return function(...moreArgs) {
+      return function (...moreArgs) {
         // Recursively call curried with the accumulated arguments
         return curried(...args, ...moreArgs);
       };
@@ -33,4 +33,3 @@ const curriedJoin = curry(join);
 console.log(curriedJoin(1, 2, 3)); // '1_2_3'
 console.log(curriedJoin(1)(2, 3)); // '1_2_3'
 console.log(curriedJoin(1, 2)(3)); // '1_2_3'
-

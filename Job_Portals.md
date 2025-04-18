@@ -29,7 +29,42 @@ Looking for front-end developer opportunities? Here’s a curated list of job po
 23. [Naukri](https://www.naukri.com/mnjuser/homepage)
 24. [Clanx](https://clanx.ai/)
 25. [Turing](https://www.turing.com/jobs)
+26. [foundit] - https://lnkd.in/dTRYCQJE
+27. [Indeed] - www.indeed.com
+28. [BuiltIn] - https://builtin.com/
+29. [ZipRecruiter] - www.ziprecruiter.com
+30. JustRemote [https://justremote.co/]
+31. Remotive [https://remotive.com/]
+32. Github Jobs [https://jobs.github.com/]
+33. PowerToFly [https://powertofly.com/]
+34. Crossover [https://www.crossover.com/]
+35. Outsourcely[https://www.outsourcely.com/]
+36. Jobbatical [https://jobbatical.com/]
 
-Whether you’re looking for full-time roles or flexible freelance opportunities, these platforms are great places to start your job search.
+# 𝘄𝗲𝗯𝘀𝗶𝘁𝗲𝘀 𝘁𝗼 𝗺𝗮𝗸𝗲 𝘆𝗼𝘂𝗿 𝗿𝗲𝘀𝘂𝗺𝗲 𝗯𝗲𝘁𝘁𝗲𝗿:
+
+1. [Jobscan] - jobscan.co
+2. [Resumeworded] - https://resumeworded.com/
+3. [Kickresume] - https://lnkd.in/dZxmaKPb
+4. [Beamjobs]- https://www.beamjobs.com/
+5. [Overleaf] - https://www.overleaf.com/
+6. [Wonsulting] - https://lnkd.in/d_wvDvXE
+7. [Zety] - https://zety.com/
+8. [Teal] - www.tealhq.com
+9. [Rezi] - www.rezi.ai
+
+Interview Preparation Websites📚
+
+1. InterviewBit - interviewbit.com
+2. Glassdoor - glassdoor.com
+3. Interviewing.io - interviewing.io
+4. Jobscan Interview Prep - jobscan.co/interview
+5. Indeed Interview Tips - indeed.com/career-advice
+6. CareerCup - careercup.com
+7. The Muse - themuse.com
+8. PrepLounge - preplounge.com
+9. Big Interview - biginterview.com
+
+   Whether you’re looking for full-time roles or flexible freelance opportunities, these platforms are great places to start your job search.
 
 Happy hunting! 📝
