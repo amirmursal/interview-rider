@@ -36,7 +36,7 @@
 34. [Outsourcely](https://www.outsourcely.com/)
 35. [Jobbatical](https://jobbatical.com/)
 
-# 𝘄𝗲𝗯𝘀𝗶𝘁𝗲𝘀 𝘁𝗼 𝗺𝗮𝗸𝗲 𝘆𝗼𝘂𝗿 𝗿𝗲𝘀𝘂𝗺𝗲 𝗯𝗲𝘁𝘁𝗲𝗿
+# Websites to make your resume better
 
 1. [Jobscan](https://jobscan.co)
 2. [Resumeworded](https://resumeworded.com/)
