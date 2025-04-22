@@ -35,6 +35,7 @@
 33. [Crossover](https://www.crossover.com/)
 34. [Outsourcely](https://www.outsourcely.com/)
 35. [Jobbatical](https://jobbatical.com/)
+36. [hirist](https://www.hirist.tech/)
 
 # Websites to make your resume better
 
