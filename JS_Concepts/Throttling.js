@@ -1,26 +1,24 @@
-/**
- * Throttling indicates that it will excecute the function after certion period of time
- */
-function throttle(callBackFunc, wait) {
-  let shouldThrottle = false;
+// debouncing is trigger a callback function after specific time
+// throttle is triggle a callback function after specific time but if it will ignore all the events triggers in btween time
+
+const getData = () => {
+  console.log("fetching data...");
+};
+
+const throttle = (fn, delay) => {
+  let isThrottled = false;
 
   return function (...args) {
-    if (shouldThrottle) {
-      return;
+    if (!isThrottled) {
+      fn.apply(this, args);
+      isThrottled = true;
+      setTimeout(() => {
+        isThrottled = false;
+      }, delay);
     }
-    let context = this;
-    shouldThrottle = true;
-
-    setTimeout(function () {
-      shouldThrottle = false;
-    }, wait);
-
-    callBackFunc.apply(context, args);
   };
-}
+};
 
-function getData() {
-  console.log("In Get Data");
-}
+const getDataWrapper = throttle(getData, 3000);
 
-throttle(getData, 100);
+window.addEventListener("resize", getDataWrapper);
