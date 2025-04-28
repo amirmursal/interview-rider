@@ -17,34 +17,20 @@ Explanation: Both 'cac' and 'aca' are valid palindromic substrings of the same l
  */
 
 const getLongestPalindromicString = (str) => {
-  //this will be brute force approach
+  let maxLength = 0;
+  let result = "";
 
-  const isPalindrome = (i, j) => {
-    let left = i;
-    let right = j - 1;
-
-    while (left < right) {
-      if (str.charAt(left) !== str.charAt(right)) {
-        return false;
-      }
-      left++;
-      right--;
-    }
-    return true;
-  };
-
-  for (let leftLength = str.length; leftLength > 0; leftLength--) {
-    for (
-      let rightLength = 0;
-      rightLength <= str.length - leftLength;
-      rightLength++
-    ) {
-      if (isPalindrome(rightLength, rightLength + leftLength)) {
-        return str.substring(rightLength, rightLength + leftLength);
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j <= str.length; j++) {
+      let sub = str.slice(i, j);
+      if (sub === sub.split("").reverse().join("") && sub.length > maxLength) {
+        result = sub;
+        maxLength = sub.length;
       }
     }
   }
-  return "";
+
+  return result;
 };
 
 console.log(getLongestPalindromicString("cauumzssz"));

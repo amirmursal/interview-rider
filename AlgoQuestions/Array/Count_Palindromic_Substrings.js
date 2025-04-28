@@ -7,24 +7,19 @@
  */
 
 const getCountPalidromicSubstring = (str) => {
-  const isPalindrom = (str, low, high) => {
-    while (low < high) {
-      if (str[low] !== str[high]) {
-        return false;
-      }
-      low++;
-      high--;
-    }
-    return true;
-  };
+  let count = 0;
 
-  let ans = 0;
-  for (let low = 0; low < str.length; low++) {
-    for (let high = low; high < str.length; high++) {
-      ans += isPalindrom(str, low, high) ? 1 : 0;
+  // Iterate through all substrings
+  for (let start = 0; start < str.length; start++) {
+    for (let end = start; end < str.length; end++) {
+      let substring = str.slice(start, end + 1);
+      if (substring === substring.split("").reverse().join("")) {
+        count++;
+      }
     }
   }
-  return ans;
+
+  return count;
 };
 
 console.log(getCountPalidromicSubstring("abba"));
