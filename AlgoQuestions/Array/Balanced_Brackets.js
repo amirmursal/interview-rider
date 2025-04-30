@@ -19,22 +19,22 @@ Explanation: The string contains correctly paired but incorrectly ordered parent
 const isBalanceBrackets = (str) => {
   const mapping = {
     ")": "(",
-    "]": "[",
     "}": "{",
+    "]": "[",
   };
   const stack = [];
-  for (let c of str) {
-    if (mapping[c]) {
+  for (let char of str) {
+    if (mapping[char]) {
       const topElement = stack.length ? stack.pop() : "#";
 
-      if (topElement !== mapping[c]) {
+      if (topElement != mapping[char]) {
         return false;
       }
     } else {
-      stack.push(c);
+      stack.push(char);
     }
   }
   return stack.length === 0;
 };
 
-console.log(isBalanceBrackets("([)]"));
+console.log(isBalanceBrackets("{()}"));

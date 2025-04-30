@@ -21,5 +21,5 @@ function getMaxProfit(arr) {
   return maxProfit;
 }
 
-const profits = [11, 2, 3, 14];
+const profits = [7, 1, 5, 3, 6, 4];
 console.log(getMaxProfit(profits));
