@@ -7,25 +7,16 @@
 
 // Example of a simple curried function
 function add(a) {
-  let total = a;
-
-  function inner(b) {
-    total += b;
-    return inner;
-  }
-
-  inner.valueOf = function () {
-    return total;
+  return function next(b) {
+    if (b !== undefined) {
+      return add(a + b);
+    } else {
+      return a;
+    }
   };
-
-  inner.toString = function () {
-    return total;
-  };
-
-  return inner;
 }
 
 // Usage of the curried function
 const add5 = add(5); // Returns a function that adds 5 to its argument
-console.log(add5(10)); // Outputs: 15
-console.log(add(5)(10)(16)); // Outputs: 15
+console.log(add(10)()); // Outputs: 15
+console.log(add(5)(10)(16)()); // Outputs: 15
