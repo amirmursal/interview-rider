@@ -5,7 +5,7 @@
  * This allows for partial application of functions and can lead to more reusable and modular code.
  */
 
-// Example of a simple curried function
+//Example of a simple curried function
 function add(a) {
   return function next(b) {
     if (b !== undefined) {
@@ -16,7 +16,12 @@ function add(a) {
   };
 }
 
+function x(a) {
+  return function (b) {
+    return a + b;
+  };
+}
 // Usage of the curried function
-const add5 = add(5); // Returns a function that adds 5 to its argument
-console.log(add(10)()); // Outputs: 15
-console.log(add(5)(10)(16)()); // Outputs: 15
+console.log(x(10)(2)); // Outputs: 12
+console.log(add(10)()); // Outputs: 10
+console.log(add(5)(10)(16)()); // Outputs: 31
