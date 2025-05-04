@@ -1,21 +1,15 @@
 /**
  * What is a closure?
- * Closures are functions that have access to the parent scope
- * // A closure is created when a function is defined inside another function.
- * // The inner function has access to the outer function's variables and parameters.
- * // Closures are useful for data hiding and encapsulation.
- * // Closures are also used to create private variables and methods.
+ * A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope.
+ * This means that a closure can "remember" the variables from its outer function even after the outer function has finished executing.
  */
 
-function outerFunction() {
-  let outerVariable = "I am an outer variable";
-
-  function innerFunction() {
-    console.log(outerVariable); // Accessing outerVariable from the outer function
-  }
-
-  return innerFunction; // Returning the inner function
+function out() {
+  let a = 5;
+  return function next() {
+    console.log(a);
+  };
 }
+const test = out();
 
-const closureFunction = outerFunction(); // Creating a closure
-closureFunction(); // Output: I am an outer variable
+test();
