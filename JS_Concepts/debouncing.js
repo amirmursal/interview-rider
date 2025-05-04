@@ -1,16 +1,23 @@
 /**
- * Create a debounce funtion explain while doing it
- * It will eccute the function after the wait time lapsed
+ * - **Debouncing**: This technique ensures that a function is executed only after a certain period of time.
+ * For example, if a user is typing in an input field, the debounced function will only be called after the user stops typing
+ * for a specified duration. This is useful for optimizing performance in scenarios like search input or window resize events.
  */
 
-function debounce(func, wait = 0) {
+function debounce(callBackfunc, wait = 0) {
   let timer = null;
   return function (...args) {
-    let context = this;
     clearTimeout(timer);
     timer = setTimeout(() => {
       timer = null;
-      func.apply(context, args);
+      callBackfunc.call(this, args);
     }, wait);
   };
 }
+function test() {
+  console.log("H");
+}
+
+const wrapperDebounce = debounce(test, 300);
+
+wrapperDebounce();
