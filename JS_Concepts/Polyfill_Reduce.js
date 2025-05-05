@@ -7,7 +7,7 @@
 
 Array.prototype.customReduce = function (callBackFun, initialValue) {
   if (this === null) {
-    throw new TypeError("Array.prototype.reduce called on null or undefined");
+    throw new TypeError("reduce will not work on null or undefined value");
   }
   if (typeof callBackFun !== "function") {
     throw new TypeError(callBackFun + "is not a function");
