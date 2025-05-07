@@ -169,3 +169,105 @@ Answer: In functional components, you can handle errors using the `ErrorBoundary
 
 ✅ Comparison of custom hooks and utility functions for logic reuse.
 Answer: Custom hooks and utility functions are both used for reusing logic in React applications, but they serve different purposes. Custom hooks are specifically designed to encapsulate stateful logic and can use React hooks internally. They allow you to manage component state and side effects while providing a clean API for other components to use. Utility functions, on the other hand, are regular JavaScript functions that do not have access to React's lifecycle methods or hooks. They are typically used for pure functions or calculations that do not depend on component state or lifecycle events. When deciding between the two, use custom hooks for stateful logic and utility functions for stateless calculations or transformations.
+
+1.What is the difference between useContext and Redux?
+2.Can we create multiple contexts inside useContext, and why is it not considered ideal for large-scale applications?
+3.What is the difference between the Virtual DOM and the Real DOM?
+4.What is the difference between State and Props?
+5.What are Controlled and Uncontrolled Components? Write an example of an Uncontrolled Component.
+6.What is useRef? Create a counter with Increment and Decrement functionality using useRef.
+7.What is JSX? Why does the browser not understand JSX, and how does it increase efficiency?
+8.What is Webpack and what is Bundling?
+9 what is SSR CSR ans ISR why and what is it?
+
+✨DOM & Web APIs
+✅ DOM traversal and manipulation
+✅ Event Delegation & Bubbling
+✅ LocalStorage, SessionStorage, Cookies
+✅ Fetch API & XMLHttpRequest
+✅ WebSockets, Server Sent Events
+✅ Service Workers & Web Workers
+✅ Intersection Observer API
+✅ Resize Observer API
+
+✨Security
+✅ XSS, CSRF – how they happen and how to prevent them
+✅ HTTPS, CORS, CSP
+✅ JWT vs Cookies – use cases and tradeoffs
+
+✨HTML + CSS
+✅ Semantic HTML
+✅ Box Model, Flexbox, Grid
+✅ BEM Methodology
+✅ Media Queries, Responsive Design
+✅ CSS Specificity & Inheritance
+✅ Animations (CSS + JS)
+✅ Accessibility (ARIA, tabIndex, screen readers)
+
+✨React
+✅ JSX, Virtual DOM
+✅ State, Props, Lifting State Up
+✅ Lifecycle Methods / useEffect
+✅ useMemo, useCallback, useRef
+✅ Context API vs Redux/Zustand
+✅ React Router (Nested, Dynamic, Protected Routes)
+✅ Error Boundaries
+✅ Suspense, Lazy Loading, Concurrent Rendering
+✅ Custom Hooks
+✅ Server-side Rendering (SSR), Static Site Generation (SSG)
+✅ React Query / SWR for data fetching
+
+✨Testing & Tooling
+✅ Unit Testing with Jest
+✅ Component Testing (React Testing Library)
+✅ End-to-end Testing (Cypress, Playwright)
+✅ Linting & Formatting (ESLint, Prettier)
+✅ Bundlers – Webpack, Vite
+✅ CI/CD Basics
+
+✨Performance Optimization
+✅ Lazy Loading, Code Splitting
+✅ Memoization & useMemo
+✅ Image optimization, Lazy Loading assets
+✅ Lighthouse, Core Web Vitals
+✅ TTI, FCP, LCP – what they mean and how to improve them
+
+✨Bonus Topics
+✅ Progressive Web Apps (PWA)
+✅ Internationalization (i18n)
+✅ Micro Frontends
+✅ Monorepo tools (Turborepo, Nx)
+✅ CSS-in-JS libraries
+✅ Working with REST APIs & GraphQL
+✅ DevTools Mastery – Network, Performance, Memory tabs
+
+2.  **Common Coding Problems**
+
+    - Solve the problem of finding the longest palindromic substring in a given string using efficient algorithms.
+    - Implement debouncing to optimize performance in scenarios like search input or window resize events.
+    - Solve the problem of finding the length of the longest substring without repeating characters.
+
+3.  **Polyfills: Write a custom polyfill**
+
+    - Promise.all
+    - bind() polyfill
+    - call() polyfill
+    - apply() polyfill
+    - Promise polyfill
+    - debounce() polyfill
+    - throttle() polyfill
+    - setTimeout polyfill
+    - setInterval polyfill
+    - map() polyfill
+    - filter() polyfill
+    - reduce() polyfill
+    - forEach() polyfill
+    - find() polyfill
+    - findIndex() polyfill
+    - some() polyfill
+    - every() polyfill
+    - flat() polyfill
+    - Object.create() polyfill
+    - Object.assign() polyfill
+    - JSON.stringify() polyfill
+    - JSON.parse() polyfill

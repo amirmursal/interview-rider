@@ -132,3 +132,36 @@ Topics covered in this document
 31 ClearAllTimeout 32 Memoization
 33 Async Progress bar 34 GroupBy Polyfill Loadsh
 34 single and double click handlers
+Here’s your roadmap 👇
+
+1. Sliding Window  
+   = When you need to find subarrays or substrings in a linear DS (like arrays or strings) that meet a certain condition  
+   \_ Used in problems like: longest subarray, max sum of k-length window, etc.
+
+2. Two Pointers  
+   = For sorted arrays/strings where you move 2 pointers to meet a condition  
+   \_ Used in: pair sums, palindrome checks, merging sorted arrays
+
+3. Modified Binary Search  
+   = Classic binary search but adapted for rotated arrays, infinite search space, or conditions beyond equality  
+   \_ Used in: search in rotated array, peak element, kth element in sorted matrix
+
+4. Subset/Backtracking  
+   = When you need to generate all combinations or permutations  
+   \_ Used in: subsets, combinations, permutations, N-Queens
+
+5. Top-K Elements  
+   = When you need to find the k smallest/largest items efficiently  
+   \_ Always think heaps/priority queues here
+
+6. DFS/BFS on Trees  
+   = To explore all nodes in a tree—depth-first (recursion) or level-by-level (queues)  
+   \_ Used in: max depth, level order traversal, path sums
+
+7. Topological Sort  
+   = Used in Directed Acyclic Graphs when there's dependency (prerequisite) between nodes  
+   \_ Common in: course scheduling, task ordering
+
+8. Dynamic Programming  
+   = The final boss. For overlapping subproblems with optimal substructure  
+   \_ Used in: knapsack, DP on strings, grid paths, longest subsequences

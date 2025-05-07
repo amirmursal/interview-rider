@@ -37,6 +37,25 @@
 35. [Jobbatical](https://jobbatical.com/)
 36. [hirist](https://www.hirist.tech/)
 37. [10up.com](https://10up.com/careers/)
+38. [workatastartup](https://www.workatastartup.com/)
+39. [apollo](https://www.apollo.io/)
+
+
+43] Constructor.io
+44] [Fluxon Careers](https://www.fluxon.com/careers)
+45] [Paperpile](https://paperpile.com/)
+
+3]https://www.ycombinator.com/jobs
+4] remote.co
+5] remote javascript
+6] https://lemon.io/
+7] showwcase
+8] https://zapier.com/blog/companies-hiring-remote-workers/
+9] Remoteleaf
+10] https://www.crunchbase.com/ - to know which startup recently funded so that we can approach founder
+11] Abhinaya Remote leaf mail
+12] https://functional.works-hub.com/
+
 
 # Websites to make your resume better
 
