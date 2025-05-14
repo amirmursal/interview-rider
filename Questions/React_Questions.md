@@ -179,6 +179,78 @@ Answer: Custom hooks and utility functions are both used for reusing logic in Re
 7.What is JSX? Why does the browser not understand JSX, and how does it increase efficiency?
 8.What is Webpack and what is Bundling?
 9 what is SSR CSR ans ISR why and what is it?
+  
+2. Code a Timer Application?
+   a. Why do we useState(prevtime => prevtime + 1) while coding a timer?
+   b. Convert it to a custom hook for a timer.
+   1. How to display dynamic html data in react ?
+3. How do you send data from parent component to child component in react ?
+4. How to call parent component method from child component in react ?
+5. How do you access the dom element ?
+6. How to bind array/array of objects to dropdown in react ?
+7. Create a lazy loaded component in react ?
+8. How to display data entered by the user in another textbox ?
+9. How to loop array/array of objects in react ?
+10. How to conditionally render an element or text in react ?
+11. How to change styles based on condition in react ?
+12. How to dhow and hide data based on condition in react ?
+    12.Bind array/array of objects to radio button in react ?
+    13.Display radio button data selected by user in another textbox ?
+13. How to call a method when component is rendered for the first time in react ?
+    15.Display keys and values of objects in a loop in react?
+14. How to rerender a component on value change in react ?
+15. How to call a method on every rerender of a component ?
+16. How to add data into useState array in functional component in react ?
+17. Create a search textbox filter ?
+    20.Create a counter component using useState ?
+    21.Create a counter component using useReducer ?
+    22.Change focus/enable/disable textbox in child component based on parent component button click ?
+18. How to perform debouncing ?
+    24.Create a component to fetch data from api ?
+    25.Force a component to rerender with out using useState in react ?
+19. How to call a method immediately after state is updated or
+    after component is rerendered ?
+20. How to display number of characters remaining functionality for textarea using react useRef?
+    28.Given two dropdowns, select 2nd dropdown options based on value selected in one dropdown ?
+    (Load states based on country selected)
+    29.Perform type checking using prop-types ?
+    30.Share data between components using context api ?
+    31.Give an emaple of optimization using useMemo ?
+    32.Give an example of optimization using usecallbacks in react ?
+    33.Create an error boundary component in react ?
+21. How to display dropdown value selected by user in another textbox ?
+    35.Create a pure component ?
+    36.Create a controlled and uncontrolled component in react ?
+    37.Create a custom hook using ?
+    38.Create a popup using portal ?
+    39.Which lifecycle hooks in class component are replaced with useEffect in functional components ?
+    40.Create a pagination component ?
+22. How do you safeguard your application ?
+
+→ Beginner
+
+1. What is React and why is it used?
+2. What is JSX and how does it differ from regular JavaScript?
+3. What are components in React?
+4. What is state in React and how is it managed in functional components?
+5. What are props in React and how are they used?
+6. How do you handle events in React?
+7. What is the difference between controlled and uncontrolled components?
+
+Also, I’ve prepared a full frontend preparation interview kit to help you crack frontend jobs in 2025, This post is from a small section of the guide; I’ve also added:
+
+- 100+ company-asked questions (MNCs + startups)
+- Clean, structured code snippets
+- Visual guides to tough concepts
+- JS, React, DOM, CSS deep dives
+- Real-world component challenges
+- Resume tips, mock rounds, and more
+
+Check it out: https://bit.ly/3QTt8ZH
+
+→ Intermediate 8. Explain React’s reconciliation process and the Virtual DOM. 9. How does the useEffect hook work in functional components? 10. How do useMemo and useCallback optimize performance in React? 11. How do you implement lazy loading of components using React.lazy and Suspense? 12. How does the React Context API work for managing global state? 13. How do you implement dynamic routing in a React application using React Router? 14. What is the purpose of the useReducer hook and when should it be used over useState?
+
+→ Advanced 15. Discuss the React Fiber architecture and its benefits over the previous stack. 16. How does React’s concurrent mode work, and what benefits does it offer? 17. Explain error boundaries in React and how they help manage errors. 18. How would you implement server-side rendering (SSR) in React, and what are its advantages? 19. Compare Higher-Order Components, render props, and custom hooks for code reuse in React. 20. How do you optimize performance in a large-scale React application?
 
 ✨DOM & Web APIs
 ✅ DOM traversal and manipulation
@@ -271,3 +343,80 @@ Answer: Custom hooks and utility functions are both used for reusing logic in Re
     - Object.assign() polyfill
     - JSON.stringify() polyfill
     - JSON.parse() polyfill
+
+4.  Design patterns in React.js?
+5.  OOP principles in JS? How followed?
+6.  useCallback vs useMemo?
+7.  Send data child to parent in React?
+8.  Event delegation example?
+9.  What’s React Portal?
+10. CSS: Fixed vs absolute?
+11. Debouncing vs throttling, with code?
+12. Arrow vs normal function?
+13. First-class vs pure function?
+14. Call by ref vs value?
+15. useImperativeHandle hook in React?
+16. Localization vs globalization?
+17. Catch errors in React?
+18. Error Boundary in React?
+19. useTransition hook?
+20. Suspense & lazy loading in React?
+21. Event Loop in JS?
+22. Generator function?
+23. Controlled vs uncontrolled component?
+24. Middleware: Redux Thunk vs Saga?
+25. Check if number is decimal?
+26. Reconciliation in React, why keys in map?
+27. Update state from prev state?
+28. Is useState/setState async?
+29. HOC with example?
+30. Render props?
+31. JS Promise methods (race, all)?
+32. Improve web app performance?
+33. Render many UI components efficiently?
+34. defer vs async difference?
+35. Semantic HTML?
+36. Responsive UI without framework?
+37. Mock API with Jest?
+38. Temporal Dead Zone?
+39. Type vs interface in TS?
+40. Generics in TS?
+41. Service worker & usage?
+42. Call stack & task execution impact?
+43. WebSocket & how it works?
+44. Data flow & API fetch in Next.js?
+45. ES6 features & JS data types?
+46. Pure Component & React.memo?
+47. useCallback vs useMemo vs React.memo?
+48. Function currying?
+49. call, apply, bind in JS?
+50. Hoisting in JS?
+51. React Portal & its use?
+52. Send data child to parent?
+53. Prototypal inheritance?
+54. Prefetch vs preload?
+55. SSR vs SSG, data fetch in Next.js?
+56. Object.freeze vs Object.seal?
+57. Polyfills? Write for reduce.
+58. Caching in Node.js app?
+59. Saga vs Thunk difference?
+60. Frontend arch patterns & state mgmt?
+61. Client vs server-side caching?
+
+Re-renders & Component Optimization
+
+1. What causes unnecessary re-renders in React?
+2. How does React.memo work, and when should you avoid it?
+3. Why are inline functions in props risky for performance?
+4. How does React decide whether to re-render a component?
+5. What are the risks of deeply nested props or prop drilling?
+
+Hooks & Memoization 6. How does useMemo improve performance? 7. When is useMemo unnecessary or harmful? 8. What does useCallback actually do? 9. What's the difference between useRef and useMemo? 10. How can useEffect contribute to performance issues?
+
+Bundling & Lazy Loading 11. How do you split a large React bundle? 12. What is React.lazy() and how do you use it? 13. How does Suspense help performance? 14. What is tree-shaking? 15. How would you load only critical code above the fold?
+
+Lists, Virtualization, and DOM Performance 16. How would you optimize a list of 10,000 items? 17. What are tools like react-window or react-virtualized used for? 18. Why is key prop important in .map() rendering? 19. What is windowing in React? 20. How do you manage dynamic heights in virtualized lists?
+
+Profiling & Debugging 21. How do you use React DevTools Profiler? 22. What kind of insights can you get from Flamegraphs? 23. How do you identify which components are re-rendering too often? 24. Have you used why-did-you-render? 25. How would you debug slow first paint or layout shift?
+
+React Internals & Advanced Behavior 26. What changed in React 18 with concurrent rendering? 27. How does automatic batching work? 28. What is the difference between useDeferredValue and useTransition? 29. How do useOptimistic and useActionState in React 19 improve UX? 30. What’s a real use case where react-scan helped you optimize?
