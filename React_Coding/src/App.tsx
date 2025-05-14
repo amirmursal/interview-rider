@@ -10,6 +10,7 @@ import Tabs from "./components/Tabs";
 import TodoList from "./components/TodoList";
 import TrafficSignal from "./components/TrafficSignal";
 import HolyGrailLayout from "./components/HolyGrailLayout";
+import TicTacToe from "./components/TicTacToe";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -32,8 +33,9 @@ const App = () => {
         title="Modal Title"
       >
         Hello
-      </ModalDialog>*/}
-      <HolyGrailLayout />
+      </ModalDialog>
+      <HolyGrailLayout />*/}
+      <TicTacToe />
     </div>
   );
 };
