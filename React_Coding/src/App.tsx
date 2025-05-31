@@ -12,6 +12,7 @@ import TrafficSignal from "./components/TrafficSignal";
 import HolyGrailLayout from "./components/HolyGrailLayout";
 import TicTacToe from "./components/TicTacToe";
 import ImageCarosel from "./components/ImageCarousel";
+import QuestionBoard from "./components/QuestionBank/QuestionBoard";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -34,8 +35,9 @@ const App = () => {
         title="Modal Title"
       >
         Hello
-      </ModalDialog>*/}
-      <ImageCarosel />
+      </ModalDialog>
+      <ImageCarosel />*/}
+      <QuestionBoard />
     </div>
   );
 };
