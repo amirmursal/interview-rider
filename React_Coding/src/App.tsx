@@ -14,6 +14,8 @@ import TicTacToe from "./components/TicTacToe";
 import ImageCarosel from "./components/ImageCarousel";
 import QuestionBoard from "./components/QuestionBank/QuestionBoard";
 import GenerateTable from "./components/GenerateTable";
+import ProgressBars from "./components/ProgressBars";
+import SearchBar from "./components/SearchBar";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -38,8 +40,10 @@ const App = () => {
         Hello
       </ModalDialog>
       <ImageCarosel />
-      <QuestionBoard />*/}
+      <QuestionBoard />
       <GenerateTable />
+      <ProgressBars />*/}
+      <SearchBar />
     </div>
   );
 };
