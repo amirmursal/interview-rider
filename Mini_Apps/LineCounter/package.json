@@ -1,0 +1,15 @@
+{
+  "name": "line-counter",
+  "version": "1.0.0",
+  "description": "Counts lines in JS files",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "count": "node index.js test.js"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
