@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import Accordian from "./components/Accordian";
 import AccordianI from "./components/AccordianI";
@@ -16,6 +16,8 @@ import QuestionBoard from "./components/QuestionBank/QuestionBoard";
 import GenerateTable from "./components/GenerateTable";
 import ProgressBars from "./components/ProgressBars";
 import SearchBar from "./components/SearchBar";
+import CustomButton from "./components/CustomButton";
+import ChipList from "./components/ChipList";
 
 const App = () => {
   const [open, setOpen] = useState(false);
@@ -27,6 +29,14 @@ const App = () => {
   const handleCloseModal = useCallback(() => {
     setOpen(false);
   }, []);
+
+  const sampleChips = [
+    { label: "1234567" },
+    { label: "12345678" },
+    { label: "12345" },
+    { label: "123456789" },
+    { label: "123456789" },
+  ];
 
   return (
     <div className="App">
@@ -42,8 +52,10 @@ const App = () => {
       <ImageCarosel />
       <QuestionBoard />
       <GenerateTable />
-      <ProgressBars />*/}
+      <ProgressBars />
       <SearchBar />
+      <CustomButton label="amir" onClick={()=> alert("HU")}/>*/}
+      <ChipList chips={sampleChips} maxChips={3} maxTextLength={6} />;
     </div>
   );
 };

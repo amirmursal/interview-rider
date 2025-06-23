@@ -179,7 +179,7 @@ Answer: Custom hooks and utility functions are both used for reusing logic in Re
 7.What is JSX? Why does the browser not understand JSX, and how does it increase efficiency?
 8.What is Webpack and what is Bundling?
 9 what is SSR CSR ans ISR why and what is it?
-  
+
 2. Code a Timer Application?
    a. Why do we useState(prevtime => prevtime + 1) while coding a timer?
    b. Convert it to a custom hook for a timer.
@@ -420,3 +420,39 @@ Lists, Virtualization, and DOM Performance 16. How would you optimize a list of 
 Profiling & Debugging 21. How do you use React DevTools Profiler? 22. What kind of insights can you get from Flamegraphs? 23. How do you identify which components are re-rendering too often? 24. Have you used why-did-you-render? 25. How would you debug slow first paint or layout shift?
 
 React Internals & Advanced Behavior 26. What changed in React 18 with concurrent rendering? 27. How does automatic batching work? 28. What is the difference between useDeferredValue and useTransition? 29. How do useOptimistic and useActionState in React 19 improve UX? 30. What’s a real use case where react-scan helped you optimize?
+
+# point out mistake from below code
+
+    #Question1
+    function List({ items }) {
+    React.useEffect(() => {
+    const handle = () => console.log("Resize");
+
+        window.addEventListener("resize", handle);
+
+    }, []);
+
+    return <ul>{items.map((i) => <li key={i}>{i}</li>)}</ul>;
+    }
+
+    #Question2:
+
+    const Parent = () => {
+    const [count, setCount] = useState(0);
+
+    const handleClick = () => {
+    console.log('Clicked');
+    };
+
+    return (
+    <>
+    <button onClick={() => setCount(c => c + 1)}>Update Count</button>
+    <Child onClick={handleClick} />
+    </>
+    );
+    };
+
+    const Child = React.memo(({ onClick }) => {
+    console.log("Child rendered");
+    return <button onClick={onClick}>Click Me</button>;
+    });
