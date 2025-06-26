@@ -1,0 +1,27 @@
+.accordion-header {
+  cursor: pointer;
+  padding: 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-body.open {
+  max-height: 500px; /* large enough for nested content */
+  padding: 10px;
+  background: #fafafa;
+}
+
+.accordion-item {
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.accordion-content p {
+  margin: 0;
+}
